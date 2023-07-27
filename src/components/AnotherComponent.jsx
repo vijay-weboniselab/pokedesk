@@ -30,7 +30,7 @@ const AnotherComponent = () => {
     <div className='box'>
       {selectedLink ? (
         <div>
-          <h4>Pokemon Details</h4>
+          <h2>user Details</h2>
           {data ? (
               <div>
               <img style={{ width: 300, height: 200 }} src={data.sprites.back_default} alt="back_default" />
@@ -38,6 +38,7 @@ const AnotherComponent = () => {
                 <h5>Name: {data.name}</h5>
               <h5>Height: {data.height}</h5>
               <h5>Weight: {data.weight}</h5>
+              <img style={{width:500,height:200}} src={data.back_default} alt='image'/>
 
             </div>
           ) : (

@@ -17,11 +17,12 @@ const ItemList = ({ items, fetchItems }) => {
 
   return (
     <div className='box'>
-        <h4>Pokemon list</h4>
+    
       {items.map((item) => (
         <div key={item.id}>
-          <button className='btn btn-light mt-2' href="#" onClick={() => handleLinkClick(item.url)}>
-          {item.name}  
+          <button className='btn btn-light mt-3'>
+          <a  onClick={() => handleLinkClick(item.url)}>{item.name}
+          </a>
           </button>
           </div>
       

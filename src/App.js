@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react'
 import ItemList from './components/ItemList';
 import { LinkProvider } from './context/LinkContext';
-import AnotherComponent from './components/DtailItem';
+import AnotherComponent from './components/AnotherComponent';
 
 
 export default function App() {
